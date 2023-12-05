@@ -18,14 +18,14 @@ To run the notebooks first run
 ```bash
     pip install -r requirements.txt
 ```
-## 2. Explore the dataset
+## 2. Exploration
 Use the ```MultiNERD_exploration.ipynb``` notebook to explore different aspects of the dataset such as:
 * Size
 * Ratio of named entities vs "O" out of scope entities
 * Distributions of named entities in the dataset
 * Average lenghts of the entities with the text on the word and token level (for the model tokenizer)
 
-## 3. Train the models
+## 3. Training
 Use the ```Model_A.ipynb``` and ```Model_B.ipynb``` notebooks to train the model in two different setups, ***A*** and ***B***.
 
 ### 3.1. Model A
@@ -34,10 +34,10 @@ Model A is trained to identify the <b>Person</b> (PER), <b>Location</b> (LOC), <
 ### 3.2. Model B
 Model A is trained to identify the <b>Person</b> (PER), <b>Location</b> (LOC), <b>Organization</b> (ORG}), <b>Animal</b> (ANIM), and <b>Disease</b> (DIS) entities.
 
-## 4. 
+## 4. Evaluation
 Use the ```Model_results_exploration.ipynb``` notebook to explore results of the models on the test partition of the dataset. These results are:
 
-### 3.1. Model A
+### 4.1. Model A
 
 ```text
                   precision    recall  f1-score   support
@@ -71,7 +71,7 @@ weighted avg       0.93      0.95      0.94     51247
 
 ![Entity level confusion matrix](./Model_A/entity_level_confusion_matrix.png)
 
-### 3.2. Model B
+### 4.2. Model B
 
 ```text
               precision    recall  f1-score   support
