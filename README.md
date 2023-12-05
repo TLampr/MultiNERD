@@ -1,6 +1,6 @@
 # MultiNERD NER
 
-This is a NER project based on the [transformers](https://huggingface.co/docs/transformers/index) and [datasets](https://huggingface.co/docs/datasets/index).
+This is a NER project based on the [transformers](https://huggingface.co/docs/transformers/index) and [datasets](https://huggingface.co/docs/datasets/index). The model used is [RoBERTa-base](https://huggingface.co/roberta-base), a language model pretrained with text from the english language, first introduced in [RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/abs/1907.11692), and released in this [repository](https://github.com/facebookresearch/fairseq/tree/main/examples/roberta).
 
 Two models are trained for two different versions of the dataset. These models are callsed <b>Model A</b> and <b>Model B</b>.
 
@@ -26,10 +26,18 @@ Use the ```MultiNERD_exploration.ipynb``` notebook to explore different aspects 
 * Average lenghts of the entities with the text on the word and token level (for the model tokenizer)
 
 ## 3. Train the models
+Use the ```Model_A.ipynb``` and ```Model_B.ipynb``` notebooks to train the model in two different setups, ***A*** and ***B***.
+
 ### 3.1. Model A
 Model A is trained to identify the <b>Person</b> (PER), <b>Location</b> (LOC), <b>Organization</b> (ORG}), <b>Animal</b> (ANIM), <b>Biological entity</b> (BIO), <b>Celestial Body</b> (CEL), <b>Disease</b> (DIS), <b>Event</b> (EVE), <b>Food</b> (FOOD), <b>Instrument</b> (INST), <b>Media</b> (MEDIA), <b>Plant</b> (PLANT), <b>Mythological entity</b> (MYTH), <b>Time</b> (TIME) and <b>Vehicle</b> (VEHI) entities.
 
-The performance achieved is:
+### 3.2. Model B
+Model A is trained to identify the <b>Person</b> (PER), <b>Location</b> (LOC), <b>Organization</b> (ORG}), <b>Animal</b> (ANIM), and <b>Disease</b> (DIS) entities.
+
+## 4. 
+Use the ```Model_results_exploration.ipynb``` notebook to explore results of the models on the test partition of the dataset. These results are:
+
+### 3.1. Model A
 
 ```text
                   precision    recall  f1-score   support
@@ -55,14 +63,15 @@ The performance achieved is:
 weighted avg       0.93      0.95      0.94     51247
 ```
 
+***Tag level confusion matrix (IOB)***
+
 ![Tag level confusion matrix](./Model_A/tag_level_confusion_matrix.png)
+
+***Entity level confusion matrix***
 
 ![Entity level confusion matrix](./Model_A/entity_level_confusion_matrix.png)
 
 ### 3.2. Model B
-Model A is trained to identify the <b>Person</b> (PER), <b>Location</b> (LOC), <b>Organization</b> (ORG}), <b>Animal</b> (ANIM), and <b>Disease</b> (DIS) entities.
-
-The performance achieved is:
 
 ```text
               precision    recall  f1-score   support
@@ -77,3 +86,11 @@ The performance achieved is:
    macro avg       0.87      0.93      0.89     45914
 weighted avg       0.96      0.97      0.97     45914
 ```
+***Tag level confusion matrix (IOB)***
+
+![Tag level confusion matrix](./Model_B/tag_level_confusion_matrix.png)
+
+***Entity level confusion matrix***
+
+![Entity level confusion matrix](./Model_B/entity_level_confusion_matrix.png)
+
