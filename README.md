@@ -28,6 +28,16 @@ Use the ```MultiNERD_exploration.ipynb``` notebook to explore different aspects 
 ## 3. Training
 Use the ```Model_A.ipynb``` and ```Model_B.ipynb``` notebooks to train the model in two different setups, ***A*** and ***B***.
 
+The hyperparameters used in training are:
+
+```json
+{
+"epochs": 20 (using early stopping),
+"learning_rate": 0.00003,
+"batch size": 64 (8 actual and 8 accumulation)
+}
+```
+
 ### 3.1. Model A
 Model A is trained to identify the <b>Person</b> (PER), <b>Location</b> (LOC), <b>Organization</b> (ORG}), <b>Animal</b> (ANIM), <b>Biological entity</b> (BIO), <b>Celestial Body</b> (CEL), <b>Disease</b> (DIS), <b>Event</b> (EVE), <b>Food</b> (FOOD), <b>Instrument</b> (INST), <b>Media</b> (MEDIA), <b>Plant</b> (PLANT), <b>Mythological entity</b> (MYTH), <b>Time</b> (TIME) and <b>Vehicle</b> (VEHI) entities.
 
