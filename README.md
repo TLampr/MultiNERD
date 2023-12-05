@@ -6,7 +6,7 @@ In this project the multilingual [MultiNERD](https://huggingface.co/datasets/Bab
 
 The model used is [RoBERTa-base](https://huggingface.co/roberta-base), a language model pretrained with text from the english language, first introduced in [RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/abs/1907.11692), and released in this [repository](https://github.com/facebookresearch/fairseq/tree/main/examples/roberta).
 
-Two models are trained for two different versions of the dataset. These models are callsed <b>Model A</b> and <b>Model B</b>.
+Two models are finetuned for two different versions of the dataset. These models are called <b>Model A</b> and <b>Model B</b>.
 
 ## Repository contents
 
