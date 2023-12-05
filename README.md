@@ -39,8 +39,6 @@ Use the ```Model_results_exploration.ipynb``` notebook to explore results of the
 * The confusion matrices
 * Ratio of named entities that are "leaked" towards the "O" out of scope entities
 
-The final results are:
-
 ### 4.1. Model A
 
 ```text
