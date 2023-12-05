@@ -1,4 +1,4 @@
-# MultiNERD NER
+# MultiNERD NER finetuning for RoBERTa-base
 
 This is a NER project based on the [transformers](https://huggingface.co/docs/transformers/index) and [datasets](https://huggingface.co/docs/datasets/index). 
 
