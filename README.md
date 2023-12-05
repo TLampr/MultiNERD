@@ -32,11 +32,12 @@ The hyperparameters used in training are:
 
 ```json
 {
-"epochs": 20 (using early stopping),
+"epochs": 10,
 "learning_rate": 0.00003,
-"batch size": 64 (8 actual and 8 accumulation)
+"batch size": 64
 }
 ```
+More specifically the batch size is achieved by using an actual batch size of 8 and a gradient accumulation of 8 batches. Furthermore the model is trained using early stopping, terminating the process after the validation loss starts increasing, usually after the 2nd epoch.
 
 ### 3.1. Model A
 Model A is trained to identify the <b>Person</b> (PER), <b>Location</b> (LOC), <b>Organization</b> (ORG}), <b>Animal</b> (ANIM), <b>Biological entity</b> (BIO), <b>Celestial Body</b> (CEL), <b>Disease</b> (DIS), <b>Event</b> (EVE), <b>Food</b> (FOOD), <b>Instrument</b> (INST), <b>Media</b> (MEDIA), <b>Plant</b> (PLANT), <b>Mythological entity</b> (MYTH), <b>Time</b> (TIME) and <b>Vehicle</b> (VEHI) entities.
