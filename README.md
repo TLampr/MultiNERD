@@ -55,9 +55,9 @@ The performance achieved is:
 weighted avg       0.93      0.95      0.94     51247
 ```
 
-![Tag level confusion matrix]('./Model A/tag_level_confusion_matrix')
+![Tag level confusion matrix](./Model%20A/tag_level_confusion_matrix.png)
 
-![Entity level confusion matrix]('./Model A/entity_level_confusion_matrix')
+![Entity level confusion matrix](./Model%20A/entity_level_confusion_matrix.png)
 
 ### 3.2. Model B
 Model A is trained to identify the <b>Person</b> (PER), <b>Location</b> (LOC), <b>Organization</b> (ORG}), <b>Animal</b> (ANIM), and <b>Disease</b> (DIS) entities.
