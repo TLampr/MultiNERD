@@ -35,7 +35,11 @@ Model A is trained to identify the <b>Person</b> (PER), <b>Location</b> (LOC), <
 Model A is trained to identify the <b>Person</b> (PER), <b>Location</b> (LOC), <b>Organization</b> (ORG}), <b>Animal</b> (ANIM), and <b>Disease</b> (DIS) entities.
 
 ## 4. Evaluation
-Use the ```Model_results_exploration.ipynb``` notebook to explore results of the models on the test partition of the dataset. These results are:
+Use the ```Model_results_exploration.ipynb``` notebook to explore results of the models on the test partition of the dataset. The results of this exploration are:
+* The confusion matrices
+* Ratio of named entities that are "leaked" towards the "O" out of scope entities
+
+The final results are:
 
 ### 4.1. Model A
 
