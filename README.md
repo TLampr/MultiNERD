@@ -47,10 +47,10 @@ The hyperparameters used in training are:
 More specifically the batch size is achieved by using an actual batch size of 8 and a gradient accumulation of 8 batches. Furthermore the model is trained using early stopping, terminating the process after the validation loss starts increasing, usually after the 2nd epoch.
 
 ### 3.1. Model A
-Model B is trained to identify the <b>Person</b> (PER), <b>Location</b> (LOC), <b>Organization</b> (ORG}), <b>Animal</b> (ANIM), <b>Biological entity</b> (BIO), <b>Celestial Body</b> (CEL), <b>Disease</b> (DIS), <b>Event</b> (EVE), <b>Food</b> (FOOD), <b>Instrument</b> (INST), <b>Media</b> (MEDIA), <b>Plant</b> (PLANT), <b>Mythological entity</b> (MYTH), <b>Time</b> (TIME) and <b>Vehicle</b> (VEHI) entities.
+Model A is trained to identify the <b>Person</b> (PER), <b>Location</b> (LOC), <b>Organization</b> (ORG}), <b>Animal</b> (ANIM), <b>Biological entity</b> (BIO), <b>Celestial Body</b> (CEL), <b>Disease</b> (DIS), <b>Event</b> (EVE), <b>Food</b> (FOOD), <b>Instrument</b> (INST), <b>Media</b> (MEDIA), <b>Plant</b> (PLANT), <b>Mythological entity</b> (MYTH), <b>Time</b> (TIME) and <b>Vehicle</b> (VEHI) entities.
 
 ### 3.2. Model B
-Model A is trained to identify the <b>Person</b> (PER), <b>Location</b> (LOC), <b>Organization</b> (ORG}), <b>Animal</b> (ANIM), and <b>Disease</b> (DIS) entities.
+Model B is trained to identify the <b>Person</b> (PER), <b>Location</b> (LOC), <b>Organization</b> (ORG}), <b>Animal</b> (ANIM), and <b>Disease</b> (DIS) entities.
 
 ## 4. Evaluation
 Use the ```Model_results_exploration.ipynb``` notebook to explore results of the models on the test partition of the dataset. The results of this exploration are:
