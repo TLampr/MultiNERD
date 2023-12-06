@@ -24,7 +24,10 @@ To run the notebooks first run
 ```
 ## 2. Exploration
 Use the ```MultiNERD_exploration.ipynb``` notebook to explore different aspects of the dataset such as:
-* Size
+* Size of dataset
+* Word count of dataset
+* Wordcloud plots of the most common words in the dataset
+* Wordcloud plots of the most common words per entity
 * Ratio of named entities vs "O" out of scope entities
 * Distributions of named entities in the dataset
 * Average lenghts of the entities with the text on the word and token level (for the model tokenizer)
