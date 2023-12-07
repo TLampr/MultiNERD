@@ -2,7 +2,7 @@
 
 This is a NER project based on the [transformers](https://huggingface.co/docs/transformers/index) and [datasets](https://huggingface.co/docs/datasets/index) developed in [Google Colab](https://colab.google/). 
 
-In this project the multilingual [MultiNERD](https://huggingface.co/datasets/Babelscape/multinerd?row=17) dataset is used and contains the the <b>Person</b> (PER), <b>Location</b> (LOC), <b>Organization</b> (ORG}), <b>Animal</b> (ANIM), <b>Biological entity</b> (BIO), <b>Celestial Body</b> (CEL), <b>Disease</b> (DIS), <b>Event</b> (EVE), <b>Food</b> (FOOD), <b>Instrument</b> (INST), <b>Media</b> (MEDIA), <b>Plant</b> (PLANT), <b>Mythological entity</b> (MYTH), <b>Time</b> (TIME) and <b>Vehicle</b> (VEHI) entities. 
+In this project the multilingual [MultiNERD](https://huggingface.co/datasets/Babelscape/multinerd?row=17) dataset is used and contains the the <b>Person</b> (PER), <b>Location</b> (LOC), <b>Organization</b> (ORG), <b>Animal</b> (ANIM), <b>Biological entity</b> (BIO), <b>Celestial Body</b> (CEL), <b>Disease</b> (DIS), <b>Event</b> (EVE), <b>Food</b> (FOOD), <b>Instrument</b> (INST), <b>Media</b> (MEDIA), <b>Plant</b> (PLANT), <b>Mythological entity</b> (MYTH), <b>Time</b> (TIME) and <b>Vehicle</b> (VEHI) entities. 
 
 The model used is [RoBERTa-base](https://huggingface.co/roberta-base), a language model pretrained with text from the english language, first introduced in [RoBERTa: A Robustly Optimized BERT Pretraining Approach](https://arxiv.org/abs/1907.11692), and released in this [repository](https://github.com/facebookresearch/fairseq/tree/main/examples/roberta).
 
